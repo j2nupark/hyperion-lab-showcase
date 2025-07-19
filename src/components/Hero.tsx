@@ -36,8 +36,7 @@ const Hero = () => {
                 <div className="animate-fade-in">
                     {/* Logo/Brand */}
                     <div className="inline-flex items-center gap-2 mb-8 p-4 rounded-2xl glass-effect">
-                        <Sparkles className="w-8 h-8 text-primary animate-glow" />
-                        <h1 className="text-3xl font-bold text-primary">하이원랩스</h1>
+                        <h1 className="text-3xl font-bold text-primary">HiwonLabs</h1>
                     </div>
 
                     {/* Main Heading */}
