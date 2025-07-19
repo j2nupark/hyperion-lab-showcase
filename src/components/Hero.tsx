@@ -36,7 +36,7 @@ const Hero = () => {
           <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             젊은 에너지로
             <br />
-            <span className="bg-gradient-to-r from-primary via-accent-purple to-accent-blue bg-clip-text text-transparent">미래를 창조</span>
+            <span className="text-primary font-bold">미래를 창조</span>
           </h2>
           
           {/* Subtitle */}
