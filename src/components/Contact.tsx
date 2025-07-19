@@ -74,7 +74,7 @@ const Contact = () => {
                                     소셜 미디어
                                 </h4>
                                 <p className="text-muted-foreground mb-4">
-                                    소셜 미디어에서도 하이원랩스의 최신 소식을 만나보세요.
+                                    소셜 미디어에서도 HiwonLabs의 최신 소식을 만나보세요.
                                 </p>
                                 <div className="flex gap-3">
                                     <Button
@@ -136,7 +136,7 @@ const Contact = () => {
                                 <Label htmlFor="company">회사명</Label>
                                 <Input
                                     id="company"
-                                    placeholder="(주)하이원랩스"
+                                    placeholder="(주)HiwonLabs"
                                     className="border-border/50 focus:border-primary"
                                 />
                             </div>

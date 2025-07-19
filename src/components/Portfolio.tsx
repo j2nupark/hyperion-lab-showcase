@@ -171,7 +171,7 @@ const Portfolio = () => {
                         <CardContent className="p-8">
                             <h3 className="text-2xl font-bold mb-4">더 많은 프로젝트가 궁금하신가요?</h3>
                             <p className="text-muted-foreground mb-6">
-                                하이원랩스의 다양한 프로젝트 경험과 기술력을 직접 확인해보세요.
+                                HiwonLabs의 다양한 프로젝트 경험과 기술력을 직접 확인해보세요.
                             </p>
                             <Button size="lg" className="group">
                                 전체 포트폴리오 보기

@@ -47,7 +47,7 @@ const About = () => {
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16 animate-fade-in">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        <span className="text-primary">하이원랩스</span>를 소개합니다
+                        <span className="text-primary">HiwonLabs</span>를 소개합니다
                     </h2>
                     <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                         젊은 에너지와 최신 트렌드를 바탕으로 혁신적인 기술 솔루션을 제공하며, 고객의 성공과 함께

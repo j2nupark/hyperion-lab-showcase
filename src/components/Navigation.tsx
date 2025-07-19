@@ -46,7 +46,7 @@ const Navigation = () => {
                         onClick={() => scrollToSection('#home')}
                     >
                         <Sparkles className="w-8 h-8 text-primary group-hover:animate-glow transition-all drop-shadow-md" />
-                        <span className="text-2xl font-bold text-primary drop-shadow-lg">하이원랩스</span>
+                        <span className="text-2xl font-bold text-primary drop-shadow-lg">HiwonLabs</span>
                     </div>
 
                     {/* Desktop Navigation */}

@@ -41,7 +41,7 @@ const Footer = () => {
                     <div className="lg:col-span-2 space-y-6">
                         <div className="flex items-center gap-2">
                             <Sparkles className="w-8 h-8 text-primary animate-glow" />
-                            <span className="text-2xl font-bold text-primary">하이원랩스</span>
+                            <span className="text-2xl font-bold text-primary">HiwonLabs</span>
                         </div>
 
                         <p className="text-muted-foreground leading-relaxed max-w-md">
@@ -135,7 +135,7 @@ const Footer = () => {
                     <div className="max-w-2xl mx-auto text-center">
                         <h3 className="text-2xl font-bold mb-4">최신 소식을 받아보세요</h3>
                         <p className="text-muted-foreground mb-6">
-                            하이원랩스의 새로운 프로젝트와 기술 트렌드 소식을 이메일로 받아보세요.
+                            HiwonLabs의 새로운 프로젝트와 기술 트렌드 소식을 이메일로 받아보세요.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
                             <input
@@ -152,7 +152,7 @@ const Footer = () => {
                 <div className="pt-8 border-t border-border/50">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                         <p className="text-sm text-muted-foreground">
-                            © {currentYear} 하이원랩스. All rights reserved.
+                            © {currentYear} HiwonLabs. All rights reserved.
                         </p>
                         <div className="flex gap-6 text-sm text-muted-foreground">
                             <a href="#privacy" className="hover:text-primary transition-colors">
