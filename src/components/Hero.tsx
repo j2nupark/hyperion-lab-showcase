@@ -1,0 +1,97 @@
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Sparkles, Zap } from "lucide-react";
+import heroBg from "@/assets/hero-bg.jpg";
+
+const Hero = () => {
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBg})` }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-background/80 via-background/60 to-background/80" />
+      </div>
+      
+      {/* Floating Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-20 left-20 w-16 h-16 rounded-full bg-primary/20 animate-float"></div>
+        <div className="absolute top-40 right-32 w-12 h-12 rounded-full bg-accent-purple/30 animate-float" style={{animationDelay: '2s'}}></div>
+        <div className="absolute bottom-40 left-32 w-20 h-20 rounded-full bg-accent-blue/20 animate-float" style={{animationDelay: '4s'}}></div>
+      </div>
+      
+      {/* Content */}
+      <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
+        <div className="animate-fade-in">
+          {/* Logo/Brand */}
+          <div className="inline-flex items-center gap-2 mb-8 p-4 rounded-2xl glass-effect">
+            <Sparkles className="w-8 h-8 text-primary animate-glow" />
+            <h1 className="text-3xl font-bold bg-gradient-to-r from-primary via-accent-purple to-accent-blue bg-clip-text text-transparent">
+              하이원랩스
+            </h1>
+          </div>
+          
+          {/* Main Heading */}
+          <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            젊은 에너지로
+            <br />
+            <span className="bg-gradient-to-r from-primary via-accent-purple to-accent-blue bg-clip-text text-transparent">
+              미래를 창조
+            </span>
+          </h2>
+          
+          {/* Subtitle */}
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+            최신 트렌드와 혁신적인 기술로 차별화된 솔루션을 제공하는 
+            <br className="hidden md:block" />
+            <span className="text-primary font-semibold">차세대 기술 회사</span>입니다
+          </p>
+          
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+            <Button 
+              size="lg" 
+              className="group text-lg px-8 py-6 bg-primary hover:bg-primary/90 glow-primary transition-all duration-300"
+            >
+              포트폴리오 보기
+              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Button>
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="text-lg px-8 py-6 border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300"
+            >
+              <Zap className="mr-2 w-5 h-5" />
+              회사 소개
+            </Button>
+          </div>
+          
+          {/* Stats */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="text-center p-6 rounded-2xl glass-effect transition-smooth hover:scale-105">
+              <div className="text-3xl font-bold text-primary mb-2">10+</div>
+              <div className="text-muted-foreground">프로젝트 경험</div>
+            </div>
+            <div className="text-center p-6 rounded-2xl glass-effect transition-smooth hover:scale-105">
+              <div className="text-3xl font-bold text-accent-purple mb-2">100%</div>
+              <div className="text-muted-foreground">최신 기술 적용</div>
+            </div>
+            <div className="text-center p-6 rounded-2xl glass-effect transition-smooth hover:scale-105">
+              <div className="text-3xl font-bold text-accent-blue mb-2">24/7</div>
+              <div className="text-muted-foreground">고객 지원</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse"></div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
