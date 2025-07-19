@@ -45,7 +45,6 @@ const Navigation = () => {
                         className="flex items-center gap-2 cursor-pointer group"
                         onClick={() => scrollToSection('#home')}
                     >
-                        <Sparkles className="w-8 h-8 text-primary group-hover:animate-glow transition-all drop-shadow-md" />
                         <span className="text-2xl font-bold text-primary drop-shadow-lg">HiwonLabs</span>
                     </div>
 

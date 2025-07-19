@@ -40,7 +40,6 @@ const Footer = () => {
                     {/* Company Info */}
                     <div className="lg:col-span-2 space-y-6">
                         <div className="flex items-center gap-2">
-                            <Sparkles className="w-8 h-8 text-primary animate-glow" />
                             <span className="text-2xl font-bold text-primary">HiwonLabs</span>
                         </div>
 
@@ -151,9 +150,7 @@ const Footer = () => {
                 {/* Bottom Bar */}
                 <div className="pt-8 border-t border-border/50">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                        <p className="text-sm text-muted-foreground">
-                            © {currentYear} HiwonLabs. All rights reserved.
-                        </p>
+                        <p className="text-sm text-muted-foreground">© {currentYear} HiwonLabs. All rights reserved.</p>
                         <div className="flex gap-6 text-sm text-muted-foreground">
                             <a href="#privacy" className="hover:text-primary transition-colors">
                                 개인정보처리방침
