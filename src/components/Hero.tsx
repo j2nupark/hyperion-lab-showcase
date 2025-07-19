@@ -53,25 +53,6 @@ const Hero = () => {
                         <span className="text-primary font-semibold">차세대 기술 회사</span>입니다
                     </p>
 
-                    {/* CTA Buttons */}
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-                        <Button
-                            size="lg"
-                            className="group text-lg px-8 py-6 bg-primary hover:bg-primary/90 glow-primary transition-all duration-300"
-                        >
-                            포트폴리오 보기
-                            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                        </Button>
-                        <Button
-                            variant="outline"
-                            size="lg"
-                            className="text-lg px-8 py-6 border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300"
-                        >
-                            <Zap className="mr-2 w-5 h-5" />
-                            회사 소개
-                        </Button>
-                    </div>
-
                     {/* Stats */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
                         <div className="text-center p-6 rounded-2xl glass-effect transition-smooth hover:scale-105">
