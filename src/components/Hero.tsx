@@ -1,23 +1,24 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, Zap } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})` }}
-      >
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url(${heroBg})`
+    }}>
         <div className="absolute inset-0 bg-gradient-to-br from-background/80 via-background/60 to-background/80" />
       </div>
       
       {/* Floating Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-20 w-16 h-16 rounded-full bg-primary/20 animate-float"></div>
-        <div className="absolute top-40 right-32 w-12 h-12 rounded-full bg-accent-purple/30 animate-float" style={{animationDelay: '2s'}}></div>
-        <div className="absolute bottom-40 left-32 w-20 h-20 rounded-full bg-accent-blue/20 animate-float" style={{animationDelay: '4s'}}></div>
+        <div className="absolute top-40 right-32 w-12 h-12 rounded-full bg-accent-purple/30 animate-float" style={{
+        animationDelay: '2s'
+      }}></div>
+        <div className="absolute bottom-40 left-32 w-20 h-20 rounded-full bg-accent-blue/20 animate-float" style={{
+        animationDelay: '4s'
+      }}></div>
       </div>
       
       {/* Content */}
@@ -35,9 +36,7 @@ const Hero = () => {
           <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             젊은 에너지로
             <br />
-            <span className="bg-gradient-to-r from-primary via-accent-purple to-accent-blue bg-clip-text text-transparent">
-              미래를 창조
-            </span>
+            <span className="bg-gradient-to-r from-primary via-accent-purple to-accent-blue bg-clip-text text-transparent">미래를 창조</span>
           </h2>
           
           {/* Subtitle */}
@@ -49,18 +48,11 @@ const Hero = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button 
-              size="lg" 
-              className="group text-lg px-8 py-6 bg-primary hover:bg-primary/90 glow-primary transition-all duration-300"
-            >
+            <Button size="lg" className="group text-lg px-8 py-6 bg-primary hover:bg-primary/90 glow-primary transition-all duration-300">
               포트폴리오 보기
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="text-lg px-8 py-6 border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300"
-            >
+            <Button variant="outline" size="lg" className="text-lg px-8 py-6 border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300">
               <Zap className="mr-2 w-5 h-5" />
               회사 소개
             </Button>
@@ -90,8 +82,6 @@ const Hero = () => {
           <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
