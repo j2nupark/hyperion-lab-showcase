@@ -33,7 +33,7 @@ const Navigation = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-background/20 backdrop-blur-xl border-b border-white/20 shadow-lg shadow-black/5' 
+        ? 'bg-background/40 backdrop-blur-xl border-b border-white/20 shadow-lg shadow-black/5' 
         : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-6">
@@ -43,8 +43,8 @@ const Navigation = () => {
             className="flex items-center gap-2 cursor-pointer group"
             onClick={() => scrollToSection('#home')}
           >
-            <Sparkles className="w-8 h-8 text-primary group-hover:animate-glow transition-all" />
-            <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent-purple bg-clip-text text-transparent">
+            <Sparkles className="w-8 h-8 text-primary group-hover:animate-glow transition-all drop-shadow-md" />
+            <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent-purple bg-clip-text text-transparent drop-shadow-lg">
               하이원랩스
             </span>
           </div>
@@ -55,10 +55,11 @@ const Navigation = () => {
               <button
                 key={item.label}
                 onClick={() => scrollToSection(item.href)}
-                className="text-foreground/90 hover:text-primary transition-colors duration-200 font-medium relative group drop-shadow-sm"
+                className="text-foreground hover:text-primary transition-colors duration-200 font-semibold relative group text-shadow-lg"
+                style={{ textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}
               >
                 {item.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full drop-shadow-sm"></span>
               </button>
             ))}
           </div>
@@ -67,7 +68,8 @@ const Navigation = () => {
           <div className="hidden md:block">
             <Button 
               onClick={() => scrollToSection('#contact')}
-              className="bg-primary/90 hover:bg-primary backdrop-blur-sm glow-primary transition-all duration-300 drop-shadow-sm"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold glow-primary transition-all duration-300 shadow-lg"
+              style={{ textShadow: '0 1px 2px rgba(0,0,0,0.3)' }}
             >
               프로젝트 문의
             </Button>
@@ -77,6 +79,7 @@ const Navigation = () => {
           <button
             className="md:hidden p-2 text-foreground hover:text-primary transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            style={{ textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -84,20 +87,22 @@ const Navigation = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-background/20 backdrop-blur-xl border-b border-white/20 shadow-lg animate-fade-in">
+          <div className="md:hidden absolute top-full left-0 right-0 bg-background/50 backdrop-blur-xl border-b border-white/20 shadow-lg animate-fade-in">
             <div className="px-6 py-4 space-y-4">
               {navItems.map((item) => (
                 <button
                   key={item.label}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left text-foreground/90 hover:text-primary transition-colors duration-200 font-medium py-2 drop-shadow-sm"
+                  className="block w-full text-left text-foreground hover:text-primary transition-colors duration-200 font-semibold py-2"
+                  style={{ textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}
                 >
                   {item.label}
                 </button>
               ))}
               <Button 
                 onClick={() => scrollToSection('#contact')}
-                className="w-full mt-4 bg-primary hover:bg-primary/90"
+                className="w-full mt-4 bg-primary hover:bg-primary/90 font-semibold shadow-lg"
+                style={{ textShadow: '0 1px 2px rgba(0,0,0,0.3)' }}
               >
                 프로젝트 문의
               </Button>
