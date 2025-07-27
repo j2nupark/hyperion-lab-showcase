@@ -14,19 +14,19 @@ const About = () => {
             icon: Rocket,
             title: '성장',
             description: '빠르게 변화하는 시장에서 지속적인 성장을 추구합니다',
-            color: 'text-accent-purple',
+            color: 'text-muted-foreground',
         },
         {
             icon: Users,
             title: '협업',
             description: '팀워크와 소통을 바탕으로 최고의 결과를 만들어냅니다',
-            color: 'text-accent-blue',
+            color: 'text-muted-foreground',
         },
         {
             icon: Target,
             title: '목표 달성',
             description: '명확한 목표 설정과 체계적인 실행으로 성공을 이룹니다',
-            color: 'text-accent-green',
+            color: 'text-muted-foreground',
         },
     ];
 
@@ -95,7 +95,7 @@ const About = () => {
 
                 {/* Mission Statement */}
                 <div className="mt-16 text-center">
-                    <Card className="max-w-4xl mx-auto border-0 bg-gradient-to-br from-primary/5 to-accent-purple/5 backdrop-blur-sm">
+                    <Card className="max-w-4xl mx-auto border-0 bg-muted/20 backdrop-blur-sm">
                         <CardContent className="p-8">
                             <h3 className="text-2xl font-bold mb-4 text-primary">우리의 미션</h3>
                             <p className="text-lg text-muted-foreground leading-relaxed">

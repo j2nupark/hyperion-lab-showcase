@@ -16,15 +16,15 @@ const Hero = () => {
 
             {/* Floating Elements */}
             <div className="absolute inset-0 overflow-hidden">
-                <div className="absolute top-20 left-20 w-16 h-16 rounded-full bg-primary/20 animate-float"></div>
+                <div className="absolute top-20 left-20 w-16 h-16 rounded-full bg-muted/20 animate-float"></div>
                 <div
-                    className="absolute top-40 right-32 w-12 h-12 rounded-full bg-accent-purple/30 animate-float"
+                    className="absolute top-40 right-32 w-12 h-12 rounded-full bg-muted/30 animate-float"
                     style={{
                         animationDelay: '2s',
                     }}
                 ></div>
                 <div
-                    className="absolute bottom-40 left-32 w-20 h-20 rounded-full bg-accent-blue/20 animate-float"
+                    className="absolute bottom-40 left-32 w-20 h-20 rounded-full bg-muted/20 animate-float"
                     style={{
                         animationDelay: '4s',
                     }}
@@ -60,11 +60,11 @@ const Hero = () => {
                             <div className="text-muted-foreground">프로젝트 경험</div>
                         </div>
                         <div className="text-center p-6 rounded-2xl glass-effect transition-smooth hover:scale-105">
-                            <div className="text-3xl font-bold text-accent-purple mb-2">100%</div>
+                            <div className="text-3xl font-bold text-foreground mb-2">100%</div>
                             <div className="text-muted-foreground">최신 기술 적용</div>
                         </div>
                         <div className="text-center p-6 rounded-2xl glass-effect transition-smooth hover:scale-105">
-                            <div className="text-3xl font-bold text-accent-blue mb-2">24/7</div>
+                            <div className="text-3xl font-bold text-foreground mb-2">24/7</div>
                             <div className="text-muted-foreground">고객 지원</div>
                         </div>
                     </div>

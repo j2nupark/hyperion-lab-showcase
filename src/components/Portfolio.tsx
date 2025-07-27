@@ -167,7 +167,7 @@ const Portfolio = () => {
 
                 {/* CTA Section */}
                 <div className="text-center mt-16">
-                    <Card className="max-w-2xl mx-auto border-0 bg-gradient-to-br from-primary/5 to-accent-purple/5 backdrop-blur-sm">
+                    <Card className="max-w-2xl mx-auto border-0 bg-muted/20 backdrop-blur-sm">
                         <CardContent className="p-8">
                             <h3 className="text-2xl font-bold mb-4">더 많은 프로젝트가 궁금하신가요?</h3>
                             <p className="text-muted-foreground mb-6">

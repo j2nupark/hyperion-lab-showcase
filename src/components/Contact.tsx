@@ -67,7 +67,7 @@ const Contact = () => {
                         </div>
 
                         {/* Social Links */}
-                        <Card className="border-0 bg-gradient-to-br from-primary/5 to-accent-blue/5 backdrop-blur-sm">
+                        <Card className="border-0 bg-muted/20 backdrop-blur-sm">
                             <CardContent className="p-6">
                                 <h4 className="font-semibold text-lg mb-4 flex items-center gap-2">
                                     <MessageCircle className="w-5 h-5 text-primary" />

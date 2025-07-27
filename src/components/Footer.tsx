@@ -130,7 +130,7 @@ const Footer = () => {
                 </div>
 
                 {/* Newsletter Signup */}
-                <div className="bg-gradient-to-r from-primary/5 to-accent-purple/5 rounded-2xl p-8 mb-12 backdrop-blur-sm">
+                <div className="bg-muted/20 rounded-2xl p-8 mb-12 backdrop-blur-sm">
                     <div className="max-w-2xl mx-auto text-center">
                         <h3 className="text-2xl font-bold mb-4">최신 소식을 받아보세요</h3>
                         <p className="text-muted-foreground mb-6">
