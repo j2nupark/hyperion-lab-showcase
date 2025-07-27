@@ -1,27 +1,6 @@
-import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Sparkles, Zap } from 'lucide-react';
-import { removeBackground, loadImageFromUrl } from '@/utils/backgroundRemoval';
 const Hero = () => {
-    const [logoSrc, setLogoSrc] = useState<string>('/lovable-uploads/5b2efe5a-73b0-499d-bcf4-1d9224f45a86.png');
-
-    useEffect(() => {
-        const processLogo = async () => {
-            try {
-                console.log('Loading and processing logo...');
-                const imageElement = await loadImageFromUrl('/lovable-uploads/5b2efe5a-73b0-499d-bcf4-1d9224f45a86.png');
-                const processedBlob = await removeBackground(imageElement);
-                const processedUrl = URL.createObjectURL(processedBlob);
-                setLogoSrc(processedUrl);
-                console.log('Logo background removed successfully');
-            } catch (error) {
-                console.error('Failed to process logo:', error);
-                // Fallback to original image
-            }
-        };
-
-        processLogo();
-    }, []);
 
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">

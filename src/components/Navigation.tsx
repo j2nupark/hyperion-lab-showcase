@@ -1,31 +1,18 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Sparkles } from 'lucide-react';
-import { removeBackground, loadImageFromUrl } from '@/utils/backgroundRemoval';
 
 const Navigation = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const [logoSrc, setLogoSrc] = useState<string>('/lovable-uploads/5b2efe5a-73b0-499d-bcf4-1d9224f45a86.png');
+    
 
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
         };
 
-        const processLogo = async () => {
-            try {
-                const imageElement = await loadImageFromUrl('/lovable-uploads/5b2efe5a-73b0-499d-bcf4-1d9224f45a86.png');
-                const processedBlob = await removeBackground(imageElement);
-                const processedUrl = URL.createObjectURL(processedBlob);
-                setLogoSrc(processedUrl);
-            } catch (error) {
-                console.error('Failed to process logo:', error);
-            }
-        };
-
         window.addEventListener('scroll', handleScroll);
-        processLogo();
         
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
@@ -61,7 +48,7 @@ const Navigation = () => {
                         onClick={() => scrollToSection('#home')}
                     >
                         <img 
-                            src={logoSrc} 
+                            src="/lovable-uploads/5b2efe5a-73b0-499d-bcf4-1d9224f45a86.png" 
                             alt="HiwonLabs Logo" 
                             className="h-8 w-auto object-contain drop-shadow-lg"
                         />
