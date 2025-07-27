@@ -68,7 +68,7 @@ const Portfolio = () => {
         <section id="portfolio" className="py-20">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16 animate-fade-in">
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                    <h2 id="portfolio-heading" className="text-4xl md:text-5xl font-bold mb-6">
                         <span className="text-primary">포트폴리오</span>
                     </h2>
                     <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

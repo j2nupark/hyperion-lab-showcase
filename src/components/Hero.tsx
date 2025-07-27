@@ -48,11 +48,11 @@ const Hero = () => {
                 <div className="animate-fade-in">
 
                     {/* Main Heading */}
-                    <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    <h1 id="hero-heading" className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                         젊은 에너지로
                         <br />
                         <span className="text-primary font-bold">미래를 창조</span>
-                    </h2>
+                    </h1>
 
                     {/* Subtitle */}
                     <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
