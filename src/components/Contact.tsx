@@ -133,7 +133,7 @@ const Contact = () => {
                             </div>
 
                             <div className="space-y-2">
-                                <Label htmlFor="company">회사명(개인의 경우 기입 X)</Label>
+                                <Label htmlFor="company">회사명 (개인의 경우 기입 X)</Label>
                                 <Input
                                     id="company"
                                     placeholder="(주)HiwonLabs"
