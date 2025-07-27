@@ -1,17 +1,32 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Sparkles } from 'lucide-react';
+import { removeBackground, loadImageFromUrl } from '@/utils/backgroundRemoval';
 
 const Navigation = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [logoSrc, setLogoSrc] = useState<string>('/lovable-uploads/3ba05a1a-3638-421f-bad9-efef270ff65a.png');
 
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
         };
 
+        const processLogo = async () => {
+            try {
+                const imageElement = await loadImageFromUrl('/lovable-uploads/3ba05a1a-3638-421f-bad9-efef270ff65a.png');
+                const processedBlob = await removeBackground(imageElement);
+                const processedUrl = URL.createObjectURL(processedBlob);
+                setLogoSrc(processedUrl);
+            } catch (error) {
+                console.error('Failed to process logo:', error);
+            }
+        };
+
         window.addEventListener('scroll', handleScroll);
+        processLogo();
+        
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
@@ -45,7 +60,11 @@ const Navigation = () => {
                         className="flex items-center gap-2 cursor-pointer group"
                         onClick={() => scrollToSection('#home')}
                     >
-                        <span className="text-2xl font-bold text-primary drop-shadow-lg">HiwonLabs</span>
+                        <img 
+                            src={logoSrc} 
+                            alt="HiwonLabs Logo" 
+                            className="h-8 w-auto object-contain drop-shadow-lg"
+                        />
                     </div>
 
                     {/* Desktop Navigation */}

@@ -1,6 +1,28 @@
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Sparkles, Zap } from 'lucide-react';
+import { removeBackground, loadImageFromUrl } from '@/utils/backgroundRemoval';
 const Hero = () => {
+    const [logoSrc, setLogoSrc] = useState<string>('/lovable-uploads/3ba05a1a-3638-421f-bad9-efef270ff65a.png');
+
+    useEffect(() => {
+        const processLogo = async () => {
+            try {
+                console.log('Loading and processing logo...');
+                const imageElement = await loadImageFromUrl('/lovable-uploads/3ba05a1a-3638-421f-bad9-efef270ff65a.png');
+                const processedBlob = await removeBackground(imageElement);
+                const processedUrl = URL.createObjectURL(processedBlob);
+                setLogoSrc(processedUrl);
+                console.log('Logo background removed successfully');
+            } catch (error) {
+                console.error('Failed to process logo:', error);
+                // Fallback to original image
+            }
+        };
+
+        processLogo();
+    }, []);
+
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
 
@@ -26,7 +48,11 @@ const Hero = () => {
                 <div className="animate-fade-in">
                     {/* Logo/Brand */}
                     <div className="inline-flex items-center gap-2 mb-8 p-4 rounded-2xl glass-effect">
-                        <h1 className="text-3xl font-bold text-primary">HiwonLabs</h1>
+                        <img 
+                            src={logoSrc} 
+                            alt="HiwonLabs Logo" 
+                            className="h-12 w-auto object-contain"
+                        />
                     </div>
 
                     {/* Main Heading */}
