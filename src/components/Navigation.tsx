@@ -6,7 +6,7 @@ import { removeBackground, loadImageFromUrl } from '@/utils/backgroundRemoval';
 const Navigation = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const [logoSrc, setLogoSrc] = useState<string>('/lovable-uploads/00763eaf-c28f-4476-8174-547f2ae5f9fb.png');
+    const [logoSrc, setLogoSrc] = useState<string>('/lovable-uploads/5b2efe5a-73b0-499d-bcf4-1d9224f45a86.png');
 
     useEffect(() => {
         const handleScroll = () => {
@@ -15,14 +15,12 @@ const Navigation = () => {
 
         const processLogo = async () => {
             try {
-                const imageElement = await loadImageFromUrl('/lovable-uploads/00763eaf-c28f-4476-8174-547f2ae5f9fb.png');
+                const imageElement = await loadImageFromUrl('/lovable-uploads/5b2efe5a-73b0-499d-bcf4-1d9224f45a86.png');
                 const processedBlob = await removeBackground(imageElement);
                 const processedUrl = URL.createObjectURL(processedBlob);
                 setLogoSrc(processedUrl);
             } catch (error) {
                 console.error('Failed to process logo:', error);
-                // Fallback to original image
-                setLogoSrc('/lovable-uploads/00763eaf-c28f-4476-8174-547f2ae5f9fb.png');
             }
         };
 
