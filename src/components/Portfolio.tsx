@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { ExternalLink, Eye, Code2 } from 'lucide-react';
+import { ExternalLink, Eye } from 'lucide-react';
 
 const Portfolio = () => {
     const { t, i18n } = useTranslation();
@@ -117,21 +117,13 @@ const Portfolio = () => {
                                     <div className="absolute bottom-4 left-4 right-4 flex gap-2">
                                         <Button
                                             size="sm"
-                                            className="flex-1 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border-white/30"
+                                            className="w-full bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border-white/30"
                                             asChild
                                         >
                                             <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
                                              <Eye className="w-4 h-4 mr-1" />
                                                 {t('portfolio.demo')}
                                             </a>
-                                        </Button>
-                                        <Button
-                                            size="sm"
-                                            variant="outline"
-                                            className="flex-1 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border-white/30"
-                                        >
-                                            <Code2 className="w-4 h-4 mr-1" />
-                                            {t('portfolio.code')}
                                         </Button>
                                     </div>
                                 </div>
