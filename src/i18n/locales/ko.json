@@ -128,5 +128,42 @@
         }
       ]
     }
+  },
+  "footer": {
+    "description": "젊은 에너지와 최신 트렌드를 바탕으로 혁신적인 기술 솔루션을 제공하는 차세대 기술 회사입니다.",
+    "contact": {
+      "email": "hello@hiwonlabs.com",
+      "phone": "+82-2-1234-5678",
+      "address": "서울시 강남구"
+    },
+    "links": {
+      "company": "회사",
+      "companyAbout": "회사 소개",
+      "team": "팀",
+      "careers": "채용",
+      "blog": "블로그",
+      "services": "서비스",
+      "webDev": "웹 개발",
+      "mobile": "모바일 앱",
+      "aiml": "AI/ML",
+      "consulting": "컨설팅",
+      "support": "지원",
+      "contactUs": "문의하기",
+      "faq": "FAQ",
+      "privacy": "개인정보처리방침",
+      "terms": "이용약관"
+    },
+    "newsletter": {
+      "title": "최신 소식을 받아보세요",
+      "description": "HiwonLabs의 새로운 프로젝트와 기술 트렌드 소식을 이메일로 받아보세요.",
+      "placeholder": "이메일 주소를 입력하세요",
+      "subscribe": "구독하기"
+    },
+    "bottom": {
+      "copyright": "© {year} HiwonLabs. All rights reserved.",
+      "privacyPolicy": "개인정보처리방침",
+      "termsOfService": "이용약관",
+      "cookiePolicy": "쿠키 정책"
+    }
   }
 }

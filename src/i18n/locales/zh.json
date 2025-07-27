@@ -128,5 +128,42 @@
         }
       ]
     }
+  },
+  "footer": {
+    "description": "基于年轻活力和最新趋势提供创新技术解决方案的新一代技术公司。",
+    "contact": {
+      "email": "hello@hiwonlabs.com",
+      "phone": "+82-2-1234-5678",
+      "address": "首尔江南区"
+    },
+    "links": {
+      "company": "公司",
+      "companyAbout": "公司介绍",
+      "team": "团队",
+      "careers": "招聘",
+      "blog": "博客",
+      "services": "服务",
+      "webDev": "网页开发",
+      "mobile": "移动应用",
+      "aiml": "AI/ML",
+      "consulting": "咨询",
+      "support": "支持",
+      "contactUs": "联系我们",
+      "faq": "常见问题",
+      "privacy": "隐私政策",
+      "terms": "服务条款"
+    },
+    "newsletter": {
+      "title": "获取最新资讯",
+      "description": "通过邮件接收HiwonLabs新项目和技术趋势的最新消息。",
+      "placeholder": "请输入您的邮箱地址",
+      "subscribe": "订阅"
+    },
+    "bottom": {
+      "copyright": "© {year} HiwonLabs. All rights reserved.",
+      "privacyPolicy": "隐私政策",
+      "termsOfService": "服务条款",
+      "cookiePolicy": "Cookie政策"
+    }
   }
 }

@@ -128,5 +128,42 @@
         }
       ]
     }
+  },
+  "footer": {
+    "description": "若いエネルギーと最新トレンドを基盤とした革新的な技術ソリューションを提供する次世代テクノロジー会社です。",
+    "contact": {
+      "email": "hello@hiwonlabs.com",
+      "phone": "+82-2-1234-5678",
+      "address": "ソウル市江南区"
+    },
+    "links": {
+      "company": "会社",
+      "companyAbout": "会社紹介",
+      "team": "チーム",
+      "careers": "採用",
+      "blog": "ブログ",
+      "services": "サービス",
+      "webDev": "ウェブ開発",
+      "mobile": "モバイルアプリ",
+      "aiml": "AI/ML",
+      "consulting": "コンサルティング",
+      "support": "サポート",
+      "contactUs": "お問い合わせ",
+      "faq": "FAQ",
+      "privacy": "プライバシーポリシー",
+      "terms": "利用規約"
+    },
+    "newsletter": {
+      "title": "最新情報を受け取る",
+      "description": "HiwonLabsの新しいプロジェクトと技術トレンドのニュースをメールで受け取ってください。",
+      "placeholder": "メールアドレスを入力してください",
+      "subscribe": "購読する"
+    },
+    "bottom": {
+      "copyright": "© {year} HiwonLabs. All rights reserved.",
+      "privacyPolicy": "プライバシーポリシー",
+      "termsOfService": "利用規約",
+      "cookiePolicy": "クッキーポリシー"
+    }
   }
 }

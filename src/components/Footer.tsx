@@ -1,27 +1,29 @@
 import { Sparkles, Mail, Phone, MapPin, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+    const { t } = useTranslation();
     const currentYear = new Date().getFullYear();
 
     const footerLinks = {
         company: [
-            { label: '회사 소개', href: '#about' },
-            { label: '팀', href: '#team' },
-            { label: '채용', href: '#careers' },
-            { label: '블로그', href: '#blog' },
+            { label: t('footer.links.companyAbout'), href: '#about' },
+            { label: t('footer.links.team'), href: '#team' },
+            { label: t('footer.links.careers'), href: '#careers' },
+            { label: t('footer.links.blog'), href: '#blog' },
         ],
         services: [
-            { label: '웹 개발', href: '#web-dev' },
-            { label: '모바일 앱', href: '#mobile' },
-            { label: 'AI/ML', href: '#ai-ml' },
-            { label: '컨설팅', href: '#consulting' },
+            { label: t('footer.links.webDev'), href: '#web-dev' },
+            { label: t('footer.links.mobile'), href: '#mobile' },
+            { label: t('footer.links.aiml'), href: '#ai-ml' },
+            { label: t('footer.links.consulting'), href: '#consulting' },
         ],
         support: [
-            { label: '문의하기', href: '#contact' },
-            { label: 'FAQ', href: '#faq' },
-            { label: '개인정보처리방침', href: '#privacy' },
-            { label: '이용약관', href: '#terms' },
+            { label: t('footer.links.contactUs'), href: '#contact' },
+            { label: t('footer.links.faq'), href: '#faq' },
+            { label: t('footer.links.privacy'), href: '#privacy' },
+            { label: t('footer.links.terms'), href: '#terms' },
         ],
     };
 
@@ -44,21 +46,21 @@ const Footer = () => {
                         </div>
 
                         <p className="text-muted-foreground leading-relaxed max-w-md">
-                            젊은 에너지와 최신 트렌드를 바탕으로 혁신적인 기술 솔루션을 제공하는 차세대 기술 회사입니다.
+                            {t('footer.description')}
                         </p>
 
                         <div className="space-y-3">
                             <div className="flex items-center gap-3 text-sm text-muted-foreground">
                                 <Mail className="w-4 h-4 text-primary" />
-                                hello@hionelabs.com
+                                {t('footer.contact.email')}
                             </div>
                             <div className="flex items-center gap-3 text-sm text-muted-foreground">
                                 <Phone className="w-4 h-4 text-primary" />
-                                +82-2-1234-5678
+                                {t('footer.contact.phone')}
                             </div>
                             <div className="flex items-center gap-3 text-sm text-muted-foreground">
                                 <MapPin className="w-4 h-4 text-primary" />
-                                서울시 강남구
+                                {t('footer.contact.address')}
                             </div>
                         </div>
 
@@ -78,7 +80,7 @@ const Footer = () => {
 
                     {/* Links Sections */}
                     <div className="space-y-4">
-                        <h3 className="font-semibold text-foreground">회사</h3>
+                        <h3 className="font-semibold text-foreground">{t('footer.links.company')}</h3>
                         <ul className="space-y-2">
                             {footerLinks.company.map((link) => (
                                 <li key={link.label}>
@@ -95,7 +97,7 @@ const Footer = () => {
                     </div>
 
                     <div className="space-y-4">
-                        <h3 className="font-semibold text-foreground">서비스</h3>
+                        <h3 className="font-semibold text-foreground">{t('footer.links.services')}</h3>
                         <ul className="space-y-2">
                             {footerLinks.services.map((link) => (
                                 <li key={link.label}>
@@ -112,7 +114,7 @@ const Footer = () => {
                     </div>
 
                     <div className="space-y-4">
-                        <h3 className="font-semibold text-foreground">지원</h3>
+                        <h3 className="font-semibold text-foreground">{t('footer.links.support')}</h3>
                         <ul className="space-y-2">
                             {footerLinks.support.map((link) => (
                                 <li key={link.label}>
@@ -132,17 +134,17 @@ const Footer = () => {
                 {/* Newsletter Signup */}
                 <div className="bg-muted/20 rounded-2xl p-8 mb-12 backdrop-blur-sm">
                     <div className="max-w-2xl mx-auto text-center">
-                        <h3 className="text-2xl font-bold mb-4">최신 소식을 받아보세요</h3>
+                        <h3 className="text-2xl font-bold mb-4">{t('footer.newsletter.title')}</h3>
                         <p className="text-muted-foreground mb-6">
-                            HiwonLabs의 새로운 프로젝트와 기술 트렌드 소식을 이메일로 받아보세요.
+                            {t('footer.newsletter.description')}
                         </p>
                         <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
                             <input
                                 type="email"
-                                placeholder="이메일 주소를 입력하세요"
+                                placeholder={t('footer.newsletter.placeholder')}
                                 className="flex-1 px-4 py-3 rounded-lg border border-border/50 bg-background/50 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
                             />
-                            <Button className="bg-primary hover:bg-primary/90 px-6">구독하기</Button>
+                            <Button className="bg-primary hover:bg-primary/90 px-6">{t('footer.newsletter.subscribe')}</Button>
                         </div>
                     </div>
                 </div>
@@ -150,16 +152,16 @@ const Footer = () => {
                 {/* Bottom Bar */}
                 <div className="pt-8 border-t border-border/50">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                        <p className="text-sm text-muted-foreground">© {currentYear} HiwonLabs. All rights reserved.</p>
+                        <p className="text-sm text-muted-foreground">{t('footer.bottom.copyright', { year: currentYear })}</p>
                         <div className="flex gap-6 text-sm text-muted-foreground">
                             <a href="#privacy" className="hover:text-primary transition-colors">
-                                개인정보처리방침
+                                {t('footer.bottom.privacyPolicy')}
                             </a>
                             <a href="#terms" className="hover:text-primary transition-colors">
-                                이용약관
+                                {t('footer.bottom.termsOfService')}
                             </a>
                             <a href="#cookies" className="hover:text-primary transition-colors">
-                                쿠키 정책
+                                {t('footer.bottom.cookiePolicy')}
                             </a>
                         </div>
                     </div>

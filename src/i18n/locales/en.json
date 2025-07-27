@@ -128,5 +128,42 @@
         }
       ]
     }
+  },
+  "footer": {
+    "description": "A next-generation technology company providing innovative technical solutions based on young energy and the latest trends.",
+    "contact": {
+      "email": "hello@hiwonlabs.com",
+      "phone": "+82-2-1234-5678",
+      "address": "Gangnam-gu, Seoul"
+    },
+    "links": {
+      "company": "Company",
+      "companyAbout": "About",
+      "team": "Team",
+      "careers": "Careers",
+      "blog": "Blog",
+      "services": "Services",
+      "webDev": "Web Development",
+      "mobile": "Mobile App",
+      "aiml": "AI/ML",
+      "consulting": "Consulting",
+      "support": "Support",
+      "contactUs": "Contact",
+      "faq": "FAQ",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "newsletter": {
+      "title": "Stay Updated",
+      "description": "Get the latest news about HiwonLabs' new projects and technology trends via email.",
+      "placeholder": "Enter your email address",
+      "subscribe": "Subscribe"
+    },
+    "bottom": {
+      "copyright": "© {year} HiwonLabs. All rights reserved.",
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service",
+      "cookiePolicy": "Cookie Policy"
+    }
   }
 }
