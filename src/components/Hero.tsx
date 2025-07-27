@@ -1,6 +1,6 @@
-import { Button } from '@/components/ui/button';
-import { ArrowRight, Sparkles, Zap } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 const Hero = () => {
+    const { t } = useTranslation();
 
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
@@ -28,31 +28,31 @@ const Hero = () => {
 
                     {/* Main Heading */}
                     <h1 id="hero-heading" className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                        젊은 에너지로
+                        {t('hero.title')}
                         <br />
-                        <span className="text-primary font-bold">미래를 창조</span>
+                        <span className="text-primary font-bold">{t('hero.titleHighlight')}</span>
                     </h1>
 
                     {/* Subtitle */}
                     <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-                        최신 트렌드와 혁신적인 기술로 차별화된 솔루션을 제공하는
+                        {t('hero.subtitle')}
                         <br className="hidden md:block" />
-                        <span className="text-primary font-semibold">차세대 기술 회사</span>입니다
+                        <span className="text-primary font-semibold">{t('hero.subtitleHighlight')}</span>{t('hero.subtitleEnd')}
                     </p>
 
                     {/* Stats */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
                         <div className="text-center p-6 rounded-2xl glass-effect transition-smooth hover:scale-105">
                             <div className="text-3xl font-bold text-primary mb-2">10+</div>
-                            <div className="text-muted-foreground">프로젝트 경험</div>
+                            <div className="text-muted-foreground">{t('hero.stats.projects')}</div>
                         </div>
                         <div className="text-center p-6 rounded-2xl glass-effect transition-smooth hover:scale-105">
                             <div className="text-3xl font-bold text-foreground mb-2">100%</div>
-                            <div className="text-muted-foreground">최신 기술 적용</div>
+                            <div className="text-muted-foreground">{t('hero.stats.technology')}</div>
                         </div>
                         <div className="text-center p-6 rounded-2xl glass-effect transition-smooth hover:scale-105">
                             <div className="text-3xl font-bold text-foreground mb-2">24/7</div>
-                            <div className="text-muted-foreground">고객 지원</div>
+                            <div className="text-muted-foreground">{t('hero.stats.support')}</div>
                         </div>
                     </div>
                 </div>

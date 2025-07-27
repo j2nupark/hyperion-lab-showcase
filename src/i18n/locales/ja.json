@@ -1,0 +1,132 @@
+{
+  "navigation": {
+    "home": "ホーム",
+    "about": "会社紹介",
+    "portfolio": "ポートフォリオ",
+    "contact": "お問い合わせ",
+    "projectInquiry": "プロジェクト相談"
+  },
+  "hero": {
+    "title": "若いエネルギーで",
+    "titleHighlight": "未来を創造",
+    "subtitle": "最新トレンドと革新的な技術で差別化されたソリューションを提供する",
+    "subtitleHighlight": "次世代テクノロジー会社",
+    "subtitleEnd": "です",
+    "stats": {
+      "projects": "プロジェクト経験",
+      "technology": "最新技術適用",
+      "support": "カスタマーサポート"
+    }
+  },
+  "about": {
+    "title": "をご紹介します",
+    "subtitle": "若いエネルギーと最新トレンドを基盤とした革新的な技術ソリューションを提供し、お客様の成功と共に成長するテクノロジーパートナーです。",
+    "values": {
+      "innovation": "革新",
+      "innovationDesc": "最新技術と創造的なアイデアで新しい価値を創出します",
+      "growth": "成長",
+      "growthDesc": "急速に変化する市場で継続的な成長を追求します",
+      "collaboration": "協業",
+      "collaborationDesc": "チームワークとコミュニケーションを基盤に最高の結果を作り出します",
+      "achievement": "目標達成",
+      "achievementDesc": "明確な目標設定と体系的な実行で成功を実現します"
+    },
+    "techStack": "コア技術スタック",
+    "mission": "私たちのミッション",
+    "missionText": "技術の力でより良い世界を作り、お客様の夢を現実に変えること",
+    "missionDesc": "若い情熱と創造的思考で革新的なソリューションを提供し、デジタル時代の新しい価値を創出します。"
+  },
+  "portfolio": {
+    "title": "ポートフォリオ",
+    "subtitle": "様々な分野で蓄積した経験と技術力を基盤に完成したプロジェクトをご紹介します。",
+    "disclaimer": "※ 以下のプロジェクトはLovableプラットフォームのサンプルプロジェクトで構成されています。",
+    "projects": {
+      "aiChatbot": {
+        "title": "AIチャットボットプラットフォーム",
+        "description": "人工知能ベースのカスタマーサービスチャットボットソリューション"
+      },
+      "ecommerceDashboard": {
+        "title": "電子商取引ダッシュボード",
+        "description": "リアルタイムデータ分析が可能な管理者ダッシュボード"
+      },
+      "socialMedia": {
+        "title": "ソーシャルメディアアプリ",
+        "description": "モダンなUI/UXのソーシャルネットワーキングプラットフォーム"
+      },
+      "fitnessTracker": {
+        "title": "フィットネストラッカー",
+        "description": "健康管理と運動記録のためのウェブアプリケーション"
+      },
+      "education": {
+        "title": "オンライン教育プラットフォーム",
+        "description": "インタラクティブな学習体験を提供する教育プラットフォーム"
+      },
+      "crypto": {
+        "title": "暗号通貨トラッキング",
+        "description": "リアルタイム暗号通貨相場とポートフォリオ管理ツール"
+      }
+    },
+    "viewProject": "プロジェクトを見る",
+    "demo": "デモ",
+    "code": "コード",
+    "ctaTitle": "もっと多くのプロジェクトが気になりますか？",
+    "ctaDescription": "HiwonLabsの多様なプロジェクト経験と技術力を直接確認してください。",
+    "ctaButton": "全体ポートフォリオを見る"
+  },
+  "contact": {
+    "title": "一緒に始めましょう",
+    "subtitle": "新しいプロジェクトやコラボレーションのアイデアはありますか？いつでもお気軽にお問い合わせください。一緒に革新的なソリューションを作りましょう。",
+    "contactInfo": "連絡先情報",
+    "info": {
+      "email": "メール",
+      "emailValue": "hello@hiwonlabs.com",
+      "emailDesc": "24時間以内に回答いたします",
+      "phone": "電話",
+      "phoneValue": "+82-2-1234-5678",
+      "phoneDesc": "平日 9:00 - 18:00",
+      "location": "所在地",
+      "locationValue": "ソウル市江南区",
+      "locationDesc": "会議・相談可能"
+    },
+    "socialMedia": "ソーシャルメディア",
+    "socialDesc": "ソーシャルメディアでもHiwonLabsの最新ニュースをご覧ください。",
+    "form": {
+      "title": "プロジェクト相談",
+      "name": "お名前",
+      "email": "メール",
+      "company": "会社名（個人の場合は記入不要）",
+      "subject": "お問い合わせタイトル",
+      "message": "メッセージ",
+      "send": "メッセージを送信",
+      "privacy": "※ 必須入力項目です。個人情報はお問い合わせ回答目的のみに使用されます。",
+      "placeholders": {
+        "name": "田中太郎",
+        "email": "hello@example.com",
+        "company": "HiwonLabs株式会社",
+        "subject": "ウェブサイト開発に関するお問い合わせ",
+        "message": "プロジェクトについて詳しく説明してください..."
+      }
+    },
+    "faq": {
+      "title": "よくある質問",
+      "questions": [
+        {
+          "q": "プロジェクト開始前の相談は無料ですか？",
+          "a": "はい、プロジェクトの範囲と要件に関する初期相談は無料で提供されます。"
+        },
+        {
+          "q": "開発期間はどのくらいかかりますか？",
+          "a": "プロジェクトの規模によって異なりますが、一般的に2-12週間程度かかります。"
+        },
+        {
+          "q": "メンテナンスサービスも提供していますか？",
+          "a": "はい、プロジェクト完了後も継続的なメンテナンスサービスを提供しています。"
+        },
+        {
+          "q": "どのような技術スタックを主に使用していますか？",
+          "a": "React、TypeScript、Node.jsなど最新技術を活用して開発しています。"
+        }
+      ]
+    }
+  }
+}

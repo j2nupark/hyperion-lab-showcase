@@ -1,14 +1,17 @@
+import { useTranslation } from 'react-i18next';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ExternalLink, Eye, Code2 } from 'lucide-react';
 
 const Portfolio = () => {
+    const { t } = useTranslation();
+    
     // 러버블 예제 프로젝트들 (실제 러버블 예제 링크들로 구성)
     const projects = [
         {
-            title: 'AI 챗봇 플랫폼',
-            description: '인공지능 기반의 고객 서비스 챗봇 솔루션',
+            title: t('portfolio.projects.aiChatbot.title'),
+            description: t('portfolio.projects.aiChatbot.description'),
             image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&h=300&fit=crop',
             tags: ['AI', 'React', 'TypeScript', 'OpenAI'],
             demoUrl: 'https://lovable.dev/projects/demo-chatbot',
@@ -16,8 +19,8 @@ const Portfolio = () => {
             category: 'AI/ML',
         },
         {
-            title: '전자상거래 대시보드',
-            description: '실시간 데이터 분석이 가능한 관리자 대시보드',
+            title: t('portfolio.projects.ecommerceDashboard.title'),
+            description: t('portfolio.projects.ecommerceDashboard.description'),
             image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop',
             tags: ['Dashboard', 'Analytics', 'React', 'Charts'],
             demoUrl: 'https://lovable.dev/projects/demo-dashboard',
@@ -25,8 +28,8 @@ const Portfolio = () => {
             category: 'Web App',
         },
         {
-            title: '소셜 미디어 앱',
-            description: '모던한 UI/UX의 소셜 네트워킹 플랫폼',
+            title: t('portfolio.projects.socialMedia.title'),
+            description: t('portfolio.projects.socialMedia.description'),
             image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop',
             tags: ['Social', 'Mobile-First', 'React', 'PWA'],
             demoUrl: 'https://lovable.dev/projects/demo-social',
@@ -34,8 +37,8 @@ const Portfolio = () => {
             category: 'Mobile',
         },
         {
-            title: '피트니스 트래커',
-            description: '건강 관리와 운동 기록을 위한 웹 애플리케이션',
+            title: t('portfolio.projects.fitnessTracker.title'),
+            description: t('portfolio.projects.fitnessTracker.description'),
             image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=300&fit=crop',
             tags: ['Health', 'Tracking', 'Data Viz', 'React'],
             demoUrl: 'https://lovable.dev/projects/demo-fitness',
@@ -43,8 +46,8 @@ const Portfolio = () => {
             category: 'Health',
         },
         {
-            title: '온라인 교육 플랫폼',
-            description: '인터랙티브한 학습 경험을 제공하는 교육 플랫폼',
+            title: t('portfolio.projects.education.title'),
+            description: t('portfolio.projects.education.description'),
             image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=500&h=300&fit=crop',
             tags: ['Education', 'Interactive', 'Video', 'React'],
             demoUrl: 'https://lovable.dev/projects/demo-education',
@@ -52,8 +55,8 @@ const Portfolio = () => {
             category: 'Education',
         },
         {
-            title: '암호화폐 트래킹',
-            description: '실시간 암호화폐 시세와 포트폴리오 관리 도구',
+            title: t('portfolio.projects.crypto.title'),
+            description: t('portfolio.projects.crypto.description'),
             image: 'https://images.unsplash.com/photo-1642104704074-907c0698abc9?w=500&h=300&fit=crop',
             tags: ['Crypto', 'Real-time', 'Finance', 'WebSocket'],
             demoUrl: 'https://lovable.dev/projects/demo-crypto',
@@ -69,13 +72,13 @@ const Portfolio = () => {
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16 animate-fade-in">
                     <h2 id="portfolio-heading" className="text-4xl md:text-5xl font-bold mb-6">
-                        <span className="text-primary">포트폴리오</span>
+                        <span className="text-primary">{t('portfolio.title')}</span>
                     </h2>
                     <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                        다양한 분야에서 축적한 경험과 기술력을 바탕으로 완성한 프로젝트들을 소개합니다.
+                        {t('portfolio.subtitle')}
                         <br />
                         <span className="text-sm text-muted-foreground/80 italic">
-                            * 아래 프로젝트들은 Lovable 플랫폼의 예제 프로젝트들로 구성되어 있습니다.
+                            {t('portfolio.disclaimer')}
                         </span>
                     </p>
                 </div>
@@ -117,8 +120,8 @@ const Portfolio = () => {
                                             asChild
                                         >
                                             <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                                                <Eye className="w-4 h-4 mr-1" />
-                                                Demo
+                                             <Eye className="w-4 h-4 mr-1" />
+                                                {t('portfolio.demo')}
                                             </a>
                                         </Button>
                                         <Button
@@ -127,7 +130,7 @@ const Portfolio = () => {
                                             className="flex-1 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border-white/30"
                                         >
                                             <Code2 className="w-4 h-4 mr-1" />
-                                            Code
+                                            {t('portfolio.code')}
                                         </Button>
                                     </div>
                                 </div>
@@ -156,7 +159,7 @@ const Portfolio = () => {
 
                                 <Button className="w-full group/btn" asChild>
                                     <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                                        프로젝트 보기
+                                        {t('portfolio.viewProject')}
                                         <ExternalLink className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
                                     </a>
                                 </Button>
@@ -167,18 +170,18 @@ const Portfolio = () => {
 
                 {/* CTA Section */}
                 <div className="text-center mt-16">
-                    <Card className="max-w-2xl mx-auto border-0 bg-muted/20 backdrop-blur-sm">
-                        <CardContent className="p-8">
-                            <h3 className="text-2xl font-bold mb-4">더 많은 프로젝트가 궁금하신가요?</h3>
-                            <p className="text-muted-foreground mb-6">
-                                HiwonLabs의 다양한 프로젝트 경험과 기술력을 직접 확인해보세요.
-                            </p>
-                            <Button size="lg" className="group">
-                                전체 포트폴리오 보기
-                                <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                            </Button>
-                        </CardContent>
-                    </Card>
+                        <Card className="max-w-2xl mx-auto border-0 bg-muted/20 backdrop-blur-sm">
+                            <CardContent className="p-8">
+                                <h3 className="text-2xl font-bold mb-4">{t('portfolio.ctaTitle')}</h3>
+                                <p className="text-muted-foreground mb-6">
+                                    {t('portfolio.ctaDescription')}
+                                </p>
+                                <Button size="lg" className="group">
+                                    {t('portfolio.ctaButton')}
+                                    <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                                </Button>
+                            </CardContent>
+                        </Card>
                 </div>
             </div>
         </section>

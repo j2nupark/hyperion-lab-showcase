@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Sparkles } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import LanguageSelector from '@/components/LanguageSelector';
 
 const Navigation = () => {
+    const { t } = useTranslation();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    
 
     useEffect(() => {
         const handleScroll = () => {
@@ -18,10 +20,10 @@ const Navigation = () => {
     }, []);
 
     const navItems = [
-        { label: '홈', href: '#home' },
-        { label: '회사소개', href: '#about' },
-        { label: '포트폴리오', href: '#portfolio' },
-        { label: '연락처', href: '#contact' },
+        { label: t('navigation.home'), href: '#home' },
+        { label: t('navigation.about'), href: '#about' },
+        { label: t('navigation.portfolio'), href: '#portfolio' },
+        { label: t('navigation.contact'), href: '#contact' },
     ];
 
     const scrollToSection = (href: string) => {
@@ -55,7 +57,7 @@ const Navigation = () => {
                     </div>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex items-center space-x-8">
+                    <div className="hidden md:flex items-center space-x-6">
                         {navItems.map((item) => (
                             <button
                                 key={item.label}
@@ -67,6 +69,7 @@ const Navigation = () => {
                                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full drop-shadow-sm"></span>
                             </button>
                         ))}
+                        <LanguageSelector />
                     </div>
 
                     {/* CTA Button */}
@@ -76,7 +79,7 @@ const Navigation = () => {
                             className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold glow-primary transition-all duration-300 shadow-lg"
                             style={{ textShadow: '0 1px 2px rgba(0,0,0,0.3)' }}
                         >
-                            프로젝트 문의
+                            {t('navigation.projectInquiry')}
                         </Button>
                     </div>
 
@@ -109,8 +112,11 @@ const Navigation = () => {
                                 className="w-full mt-4 bg-primary hover:bg-primary/90 font-semibold shadow-lg"
                                 style={{ textShadow: '0 1px 2px rgba(0,0,0,0.3)' }}
                             >
-                                프로젝트 문의
+                                {t('navigation.projectInquiry')}
                             </Button>
+                            <div className="mt-4 pt-4 border-t border-white/20">
+                                <LanguageSelector />
+                            </div>
                         </div>
                     </div>
                 )}

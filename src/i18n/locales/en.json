@@ -1,0 +1,132 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "projectInquiry": "Project Inquiry"
+  },
+  "hero": {
+    "title": "Creating the Future",
+    "titleHighlight": "with Young Energy",
+    "subtitle": "A next-generation technology company providing differentiated solutions with",
+    "subtitleHighlight": "latest trends and innovative technology",
+    "subtitleEnd": "",
+    "stats": {
+      "projects": "Project Experience",
+      "technology": "Latest Tech Applied",
+      "support": "Customer Support"
+    }
+  },
+  "about": {
+    "title": "Introducing",
+    "subtitle": "We are a technology partner that provides innovative technical solutions based on young energy and the latest trends, growing together with our customers' success.",
+    "values": {
+      "innovation": "Innovation",
+      "innovationDesc": "We create new value through cutting-edge technology and creative ideas",
+      "growth": "Growth",
+      "growthDesc": "We pursue continuous growth in a rapidly changing market",
+      "collaboration": "Collaboration",
+      "collaborationDesc": "We achieve the best results based on teamwork and communication",
+      "achievement": "Goal Achievement",
+      "achievementDesc": "We achieve success through clear goal setting and systematic execution"
+    },
+    "techStack": "Core Technology Stack",
+    "mission": "Our Mission",
+    "missionText": "Creating a better world through the power of technology and turning customers' dreams into reality",
+    "missionDesc": "We create new value in the digital age by providing innovative solutions with young passion and creative thinking."
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Introducing projects completed based on experience and technical skills accumulated in various fields.",
+    "disclaimer": "* The projects below are composed of example projects from the Lovable platform.",
+    "projects": {
+      "aiChatbot": {
+        "title": "AI Chatbot Platform",
+        "description": "AI-based customer service chatbot solution"
+      },
+      "ecommerceDashboard": {
+        "title": "E-commerce Dashboard",
+        "description": "Admin dashboard with real-time data analysis capabilities"
+      },
+      "socialMedia": {
+        "title": "Social Media App",
+        "description": "Social networking platform with modern UI/UX"
+      },
+      "fitnessTracker": {
+        "title": "Fitness Tracker",
+        "description": "Web application for health management and workout tracking"
+      },
+      "education": {
+        "title": "Online Education Platform",
+        "description": "Educational platform providing interactive learning experiences"
+      },
+      "crypto": {
+        "title": "Cryptocurrency Tracking",
+        "description": "Real-time cryptocurrency rates and portfolio management tool"
+      }
+    },
+    "viewProject": "View Project",
+    "demo": "Demo",
+    "code": "Code",
+    "ctaTitle": "Curious about more projects?",
+    "ctaDescription": "Check out HiwonLabs' diverse project experience and technical capabilities directly.",
+    "ctaButton": "View Full Portfolio"
+  },
+  "contact": {
+    "title": "Let's Start Together",
+    "subtitle": "Do you have ideas for new projects or collaborations? Feel free to contact us anytime. Let's create innovative solutions together.",
+    "contactInfo": "Contact Information",
+    "info": {
+      "email": "Email",
+      "emailValue": "hello@hiwonlabs.com",
+      "emailDesc": "We'll respond within 24 hours",
+      "phone": "Phone",
+      "phoneValue": "+82-2-1234-5678",
+      "phoneDesc": "Weekdays 9:00 - 18:00",
+      "location": "Location",
+      "locationValue": "Gangnam-gu, Seoul",
+      "locationDesc": "Meetings and consultations available"
+    },
+    "socialMedia": "Social Media",
+    "socialDesc": "Stay updated with HiwonLabs' latest news on social media.",
+    "form": {
+      "title": "Project Inquiry",
+      "name": "Name",
+      "email": "Email",
+      "company": "Company (Skip if individual)",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "privacy": "* Required fields. Personal information is used only for inquiry response purposes.",
+      "placeholders": {
+        "name": "John Doe",
+        "email": "hello@example.com",
+        "company": "HiwonLabs Inc.",
+        "subject": "Website development inquiry",
+        "message": "Please describe your project in detail..."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "q": "Is the consultation before project start free?",
+          "a": "Yes, initial consultation about project scope and requirements is provided free of charge."
+        },
+        {
+          "q": "How long does development take?",
+          "a": "It varies by project scale, but typically takes 2-12 weeks."
+        },
+        {
+          "q": "Do you provide maintenance services?",
+          "a": "Yes, we provide continuous maintenance services even after project completion."
+        },
+        {
+          "q": "What technology stack do you mainly use?",
+          "a": "We develop using cutting-edge technologies such as React, TypeScript, and Node.js."
+        }
+      ]
+    }
+  }
+}

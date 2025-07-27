@@ -1,31 +1,34 @@
+import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Lightbulb, Rocket, Users, Target } from 'lucide-react';
 
 const About = () => {
+    const { t } = useTranslation();
+    
     const values = [
         {
             icon: Lightbulb,
-            title: '혁신',
-            description: '최신 기술과 창의적 아이디어로 새로운 가치를 창출합니다',
+            title: t('about.values.innovation'),
+            description: t('about.values.innovationDesc'),
             color: 'text-primary',
         },
         {
             icon: Rocket,
-            title: '성장',
-            description: '빠르게 변화하는 시장에서 지속적인 성장을 추구합니다',
+            title: t('about.values.growth'),
+            description: t('about.values.growthDesc'),
             color: 'text-muted-foreground',
         },
         {
             icon: Users,
-            title: '협업',
-            description: '팀워크와 소통을 바탕으로 최고의 결과를 만들어냅니다',
+            title: t('about.values.collaboration'),
+            description: t('about.values.collaborationDesc'),
             color: 'text-muted-foreground',
         },
         {
             icon: Target,
-            title: '목표 달성',
-            description: '명확한 목표 설정과 체계적인 실행으로 성공을 이룹니다',
+            title: t('about.values.achievement'),
+            description: t('about.values.achievementDesc'),
             color: 'text-muted-foreground',
         },
     ];
@@ -47,11 +50,10 @@ const About = () => {
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16 animate-fade-in">
                     <h2 id="about-heading" className="text-4xl md:text-5xl font-bold mb-6">
-                        <span className="text-primary">HiwonLabs</span>를 소개합니다
+                        <span className="text-primary">HiwonLabs</span>{t('about.title')}
                     </h2>
                     <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                        젊은 에너지와 최신 트렌드를 바탕으로 혁신적인 기술 솔루션을 제공하며, 고객의 성공과 함께
-                        성장하는 기술 파트너입니다.
+                        {t('about.subtitle')}
                     </p>
                 </div>
 
@@ -78,7 +80,7 @@ const About = () => {
 
                 {/* Technology Stack */}
                 <div className="text-center">
-                    <h3 className="text-2xl font-bold mb-8">핵심 기술 스택</h3>
+                    <h3 className="text-2xl font-bold mb-8">{t('about.techStack')}</h3>
                     <div className="flex flex-wrap justify-center gap-3">
                         {technologies.map((tech, index) => (
                             <Badge
@@ -97,12 +99,11 @@ const About = () => {
                 <div className="mt-16 text-center">
                     <Card className="max-w-4xl mx-auto border-0 bg-muted/20 backdrop-blur-sm">
                         <CardContent className="p-8">
-                            <h3 className="text-2xl font-bold mb-4 text-primary">우리의 미션</h3>
+                            <h3 className="text-2xl font-bold mb-4 text-primary">{t('about.mission')}</h3>
                             <p className="text-lg text-muted-foreground leading-relaxed">
-                                "기술의 힘으로 더 나은 세상을 만들어가며, 고객의 꿈을 현실로 바꾸는 것"
+                                "{t('about.missionText')}"
                                 <br />
-                                젊은 열정과 창의적 사고로 혁신적인 솔루션을 제공하여 디지털 시대의 새로운 가치를
-                                창출합니다.
+                                {t('about.missionDesc')}
                             </p>
                         </CardContent>
                     </Card>

@@ -1,0 +1,132 @@
+{
+  "navigation": {
+    "home": "首页",
+    "about": "公司介绍",
+    "portfolio": "作品集",
+    "contact": "联系我们",
+    "projectInquiry": "项目咨询"
+  },
+  "hero": {
+    "title": "以年轻活力",
+    "titleHighlight": "创造未来",
+    "subtitle": "以最新趋势和创新技术提供差异化解决方案的",
+    "subtitleHighlight": "新一代技术公司",
+    "subtitleEnd": "",
+    "stats": {
+      "projects": "项目经验",
+      "technology": "最新技术应用",
+      "support": "客户支持"
+    }
+  },
+  "about": {
+    "title": "介绍",
+    "subtitle": "我们是一家基于年轻活力和最新趋势提供创新技术解决方案的技术伙伴，与客户的成功共同成长。",
+    "values": {
+      "innovation": "创新",
+      "innovationDesc": "通过最新技术和创意理念创造新价值",
+      "growth": "成长",
+      "growthDesc": "在快速变化的市场中追求持续成长",
+      "collaboration": "合作",
+      "collaborationDesc": "基于团队合作和沟通创造最佳成果",
+      "achievement": "目标达成",
+      "achievementDesc": "通过明确的目标设定和系统性执行实现成功"
+    },
+    "techStack": "核心技术栈",
+    "mission": "我们的使命",
+    "missionText": "通过技术的力量创造更美好的世界，将客户的梦想变为现实",
+    "missionDesc": "以年轻的热情和创意思维提供创新解决方案，在数字时代创造新价值。"
+  },
+  "portfolio": {
+    "title": "作品集",
+    "subtitle": "介绍基于在各个领域积累的经验和技术实力完成的项目。",
+    "disclaimer": "* 以下项目由Lovable平台的示例项目组成。",
+    "projects": {
+      "aiChatbot": {
+        "title": "AI聊天机器人平台",
+        "description": "基于人工智能的客户服务聊天机器人解决方案"
+      },
+      "ecommerceDashboard": {
+        "title": "电子商务仪表板",
+        "description": "可进行实时数据分析的管理员仪表板"
+      },
+      "socialMedia": {
+        "title": "社交媒体应用",
+        "description": "具有现代UI/UX的社交网络平台"
+      },
+      "fitnessTracker": {
+        "title": "健身追踪器",
+        "description": "用于健康管理和运动记录的网络应用程序"
+      },
+      "education": {
+        "title": "在线教育平台",
+        "description": "提供互动学习体验的教育平台"
+      },
+      "crypto": {
+        "title": "加密货币追踪",
+        "description": "实时加密货币汇率和投资组合管理工具"
+      }
+    },
+    "viewProject": "查看项目",
+    "demo": "演示",
+    "code": "代码",
+    "ctaTitle": "想了解更多项目吗？",
+    "ctaDescription": "直接查看HiwonLabs的多样化项目经验和技术实力。",
+    "ctaButton": "查看完整作品集"
+  },
+  "contact": {
+    "title": "让我们一起开始",
+    "subtitle": "您有新项目或合作的想法吗？随时联系我们。让我们一起创造创新的解决方案。",
+    "contactInfo": "联系信息",
+    "info": {
+      "email": "邮箱",
+      "emailValue": "hello@hiwonlabs.com",
+      "emailDesc": "24小时内回复",
+      "phone": "电话",
+      "phoneValue": "+82-2-1234-5678",
+      "phoneDesc": "工作日 9:00 - 18:00",
+      "location": "地址",
+      "locationValue": "首尔江南区",
+      "locationDesc": "可进行会议和咨询"
+    },
+    "socialMedia": "社交媒体",
+    "socialDesc": "在社交媒体上也可以了解HiwonLabs的最新消息。",
+    "form": {
+      "title": "项目咨询",
+      "name": "姓名",
+      "email": "邮箱",
+      "company": "公司名称（个人请留空）",
+      "subject": "咨询标题",
+      "message": "消息",
+      "send": "发送消息",
+      "privacy": "* 必填项目。个人信息仅用于咨询回复目的。",
+      "placeholders": {
+        "name": "张三",
+        "email": "hello@example.com",
+        "company": "HiwonLabs有限公司",
+        "subject": "网站开发相关咨询",
+        "message": "请详细描述您的项目..."
+      }
+    },
+    "faq": {
+      "title": "常见问题",
+      "questions": [
+        {
+          "q": "项目开始前的咨询是免费的吗？",
+          "a": "是的，关于项目范围和需求的初期咨询是免费提供的。"
+        },
+        {
+          "q": "开发周期大约需要多长时间？",
+          "a": "根据项目规模不同，一般需要2-12周左右。"
+        },
+        {
+          "q": "也提供维护服务吗？",
+          "a": "是的，项目完成后也提供持续的维护服务。"
+        },
+        {
+          "q": "主要使用什么技术栈？",
+          "a": "我们使用React、TypeScript、Node.js等最新技术进行开发。"
+        }
+      ]
+    }
+  }
+}
