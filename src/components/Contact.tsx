@@ -181,7 +181,7 @@ const Contact = () => {
                 <div className="mt-20">
                     <h3 className="text-2xl font-bold text-center mb-8">{t('contact.faq.title')}</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                        {t('contact.faq.questions', { returnObjects: true }).map((faq: any, index: number) => (
+                        {(t('contact.faq.questions', { returnObjects: true }) as Array<{q: string, a: string}>).map((faq, index) => (
                             <Card key={index} className="border-0 bg-white/30 backdrop-blur-sm">
                                 <CardContent className="p-6">
                                     <h4 className="font-semibold mb-2 text-primary">{faq.q}</h4>
