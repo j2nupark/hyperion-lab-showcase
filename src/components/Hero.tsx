@@ -1,18 +1,8 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Sparkles, Zap } from 'lucide-react';
-import heroBg from '@/assets/hero-bg.jpg';
 const Hero = () => {
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-            {/* Background Image */}
-            <div
-                className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                style={{
-                    backgroundImage: `url(${heroBg})`,
-                }}
-            >
-                <div className="absolute inset-0 bg-gradient-to-br from-background/80 via-background/60 to-background/80" />
-            </div>
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
 
             {/* Floating Elements */}
             <div className="absolute inset-0 overflow-hidden">
