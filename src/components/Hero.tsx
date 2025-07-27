@@ -47,7 +47,7 @@ const Hero = () => {
             <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
                 <div className="animate-fade-in">
                     {/* Logo/Brand */}
-                    <div className="inline-flex items-center gap-2 mb-8 p-4 rounded-2xl glass-effect">
+                    <div className="inline-flex items-center gap-2 mb-8 p-8 rounded-2xl glass-effect">
                         <img 
                             src={logoSrc} 
                             alt="HiwonLabs Logo" 
