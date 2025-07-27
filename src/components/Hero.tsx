@@ -51,7 +51,7 @@ const Hero = () => {
                         <img 
                             src={logoSrc} 
                             alt="HiwonLabs Logo" 
-                            className="h-12 w-auto object-contain"
+                            className="h-20 w-auto object-contain"
                         />
                     </div>
 
