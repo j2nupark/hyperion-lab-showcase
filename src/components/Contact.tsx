@@ -7,7 +7,8 @@ import { Label } from '@/components/ui/label';
 import { Mail, Phone, MapPin, Send, MessageCircle } from 'lucide-react';
 
 const Contact = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    console.log('Contact component - Current language:', i18n.language);
     
     const contactInfo = [
         {

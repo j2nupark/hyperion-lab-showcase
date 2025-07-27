@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 const Hero = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    console.log('Hero component - Current language:', i18n.language);
 
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">

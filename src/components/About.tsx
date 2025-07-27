@@ -4,7 +4,8 @@ import { Badge } from '@/components/ui/badge';
 import { Lightbulb, Rocket, Users, Target } from 'lucide-react';
 
 const About = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    console.log('About component - Current language:', i18n.language);
     
     const values = [
         {

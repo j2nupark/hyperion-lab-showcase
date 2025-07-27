@@ -5,7 +5,8 @@ import { Badge } from '@/components/ui/badge';
 import { ExternalLink, Eye, Code2 } from 'lucide-react';
 
 const Portfolio = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    console.log('Portfolio component - Current language:', i18n.language);
     
     // 러버블 예제 프로젝트들 (실제 러버블 예제 링크들로 구성)
     const projects = [
